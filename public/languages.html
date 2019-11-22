@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Languages - Web Design</title>
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <!-- <script src="https://kit.fontawesome.com/830e9d9a3a.js" crossorigin="anonymous"></script> -->
+  <script src="js/script.js"></script>
+  <!-- <link rel="stylesheet" href="../css/default.css"> -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/overwrite.css">
+</head>
+<body class="flex flex-col">
+  <header class="bg-blue-900 text-white p-3">
+      <nav class="md:flex justify-between">
+        <div class="flex justify-between">
+          <h1 class=""><a href="index.html">Web Desgin</a></h1>
+          
+          <button class="md:hidden my-auto" onclick="toggleNav()">
+            <span class="fas fa-bars fa-2x"></span>
+          </button>
+        </div>
+        <ul class="md:block hidden text-xl" id="expandable_menu">
+          <li class="block md:inline-block py-1 hover:bg-blue-800 rounded text-center active"><a href="./index.html">Home</a></li>
+          <li class="block md:inline-block mt-1 py-1 hover:bg-blue-800 rounded text-center"><a href="languages.html">Languages</a></li>
+          <li class="block md:inline-block mt-1 py-1 hover:bg-blue-800 rounded text-center"><a href="best-practices.html">Best practices</a></li>
+          <li class="block md:inline-block mt-1 py-1 hover:bg-blue-800 rounded text-center"><a href="about.html">About</a></li>
+          <li class="block md:hidden mt-1 py-1 hover:bg-blue-800 rounded text-center"><a href="disclaimer.html">Disclaimer</a></li>
+        </ul>
+    </nav>
+  </header>
+
+
+  <main class="flex-auto text-center gradient py-4">
+    <h1 class="">Languages</h1>
+    <p class="max-w-2xl mx-auto px-2">In Web Design, there are different languages for different purposes. </p>
+    <section class="flex flex-wrap container flex-center my-4" id="language-cards">
+      <div class="card">
+        <img class="h-24 m-auto pb-1" src="img/html-5.svg" alt="HTML5 logo">
+        <h2 class="">HTML5</h2>
+        <p class="text">In long it is called <q>Hypertext Markup Language</q> and it is used to markup. The general structure and content is usually located in this file. Good HTML-code follows the POUR principle.</p>
+      </div>
+      <div class="card">
+        <img class="h-24 m-auto pb-1" src="img/css-5.svg" alt="CSS3 logo">
+        <h2 class="">CSS3</h2>
+        <p class="text">In long it is called <q>Cascading Style Sheets</q> and it is used to style a webpage (as the name also implies). 
+          There are also Frameworks built in css which lets you use predefined styles and apply them 
+          via the HTML <code class="text-blue-700">class</code> attribute</p>
+      </div>
+      <div class="card">
+        <img class="h-24 m-auto pb-1" src="img/javascript-4.svg" alt="Javascript logo">
+        <h2 class="uppercase">Javascript</h2>
+        <p class="text">In short it is just called <q>JS</q> and it is used to give a webpage functionality. It is used to transfer forms for example but it can also be used to change the HTML. There is almost no limits in what you can do with it.</p>
+      </div>
+      <div class="card text-left">
+        <img class="h-24 m-auto pb-1" src="img/tailwind-css-icon.svg" alt="tailwind logo">
+        <h2 class="text-center">Tailwind Framework</h2>
+        <div class="flex">
+          <div class="w-full lg:w-2/3 inline-block text-justify">
+            <p><strong>First of all:</strong> A Frameworks is <u>not</u> a language like HTML, CSS or Javascript. 
+              It is a library using CSS to support Web Designers to create websites faster. Sometimes, Frameworks also includes JavaScript.
+              But primarily they are used for styling purposes.
+            </p>
+            <p class="pt-2">There are many frameworks out there. Bootstrap is one of the most popular. 
+              However the use of a framework like Bootstrap often times results in similar looking websites.
+              This can be good as the user is familiar to the general structure and feeling, but it can also be boring.
+              To be able to create a unique website I decided to use the Tailwind Framework</p>
+            <p class="pt-2"><strong class="text-xl">Tailwind</strong> is a low-level framework which is highly customizable. 
+              It is built to create good looking websites without spending too much time on basic styling with CSS from scratch.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quam atque a ducimus, iure voluptatum eius harum, veniam animi ipsum adipisci quisquam cumque aliquam dolore eligendi eaque exercitationem labore temporibus.
+             </p>
+          </div>
+          <div class="w-1/3 h-auto ml-6 hidden lg:block relative"><img class="rounded-lg absolute inset-0 h-full w-full object-cover object-center" src="img/code.jpg" alt="code on monitor"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+ 
+  <footer class="bg-blue-900 text-white">
+    <p class="w-1/3 p-4 hidden md:inline-block text-gray-500 text-xs"><a href="disclaimer.html">Disclaimer</a></p>
+    <p class="text-center py-4 md:w-1/3 md:inline-block">
+      &copy; Tom Wehmeyer
+    </p>
+  </footer>
+
+</body>
+</html>

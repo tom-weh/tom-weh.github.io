@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Best practices - Web Design</title>
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <!-- <script src="https://kit.fontawesome.com/830e9d9a3a.js" crossorigin="anonymous"></script> -->
+  <script src="js/script.js"></script>
+  <!-- <link rel="stylesheet" href="../css/default.css"> -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/overwrite.css">
+</head>
+<body class="flex flex-col">
+  <header class="bg-blue-900 text-white p-3">
+    <nav class="md:flex justify-between">
+      <div class="flex justify-between">
+        <h1 class=""><a href="index.html">Web Desgin</a></h1>
+        
+        <button class="md:hidden my-auto" onclick="toggleNav()">
+          <span class="fas fa-bars fa-2x"></span>
+        </button>
+      </div>
+      <ul class="md:block hidden text-xl" id="expandable_menu">
+          <li class="block md:inline-block py-1 hover:bg-blue-800 rounded text-center active"><a href="./index.html">Home</a></li>
+          <li class="block md:inline-block mt-1 py-1 hover:bg-blue-800 rounded text-center"><a href="languages.html">Languages</a></li>
+          <li class="block md:inline-block mt-1 py-1 hover:bg-blue-800 rounded text-center"><a href="best-practices.html">Best practices</a></li>
+          <li class="block md:inline-block mt-1 py-1 hover:bg-blue-800 rounded text-center"><a href="about.html">About</a></li>
+          <li class="block md:hidden mt-1 py-1 hover:bg-blue-800 rounded text-center"><a href="disclaimer.html">Disclaimer</a></li>
+        </ul>
+    </nav>
+  </header>
+
+
+  <main class="flex-auto text-center gradient py-4">
+    <h1 class="">Best practices</h1>
+    <p class="max-w-2xl mx-auto">In Web Design, there are always a million ways to achieve the thing you want. Some are more complicated than others. 
+      You can build your webpage however you like but there are some best practices to make a good website.</p>
+    <section class="flex flex-wrap container flex-center my-4" id="practice-cards">
+      <div class="card card-half">
+        <!-- <img class="h-24 m-auto pb-1" src="img/html-5.svg" alt="HTML5 logo"> -->
+        <h2 class="">Mobile first</h2>
+        <p class="">This is a concept you may follow building your website. If you follow this concept, you will start designing your website to be usable on mobile devices with a small screen.
+          This way, you make sure that your website is accessible on almost every device. Then you will start writing media queries and custom rules to change the layout and look of the page on larger screens.
+        </p>
+        <p class="my-2">Good Frameworks most probably are designed this way. For example the popular Framework Bootstrap follows this concept.</p>
+        <div class="image-container"><img src="img/mobile.jpg" alt="" class="w-full -mt-16"></div>
+      </div>
+      <div class="card card-half">
+        <!-- <img class="h-24 m-auto pb-1" src="img/css-5.svg" alt="CSS3 logo"> -->
+        <h2 class="">Avoid inline styles</h2>
+        <p class="">You should avoid using inline styles. Inline styles are styles you attach directly to the HTML element, for example: </p>
+        <p class="mt-2"><code>&lt;<span class="text-blue-800">p</span> <span class="text-blue-500">style=</span><span class="text-orange-600">"text-align:center;"</span>&gt;</code></p>
+        <p class="mt-2">This is rather bad practice because you have to go into your HTML every time you want to change the style of an element. The inline styles will <strong>always</strong> overwrite the styles created in the head or an external file. 
+        So you are better of using an external stylesheet as it also is much more pleasant to look at.</p>
+        <div class="image-container flex-auto"><img src="img/inline.jpg" alt="" class="w-full"></div>
+      </div>
+      <div class="card card-half">
+        <!-- <img class="h-24 m-auto pb-1" src="img/javascript-4.svg" alt="Javascript logo"> -->
+        <h2 class="">Validate frequently</h2>
+        <p class="">Although browsers do a great job at trying to correct our mistakes (e.g. forgotten closing tags) that isn't always the case. 
+          Many people are using different browsers and each browser might correct these errors a little different resulting in different looking websites in different browsers.</p>
+          <p class="my-2">Browsers correcting mistakes makes it also impossible to notice that you made a mistake in the first place. For this reason, use tools like <a class="text-blue-700" href="https://validator.w3.org/">w3validator</a> and visit your page on multiple browsers and devices.</p>
+          <div class="image-container"><img src="img/time.jpg" alt="" class="w-full"></div>
+      </div>
+      <div class="card card-half">
+        <!-- <img class="h-24 m-auto pb-1" src="img/javascript-4.svg" alt="Javascript logo"> -->
+        <h2 class="">Use semantically correct tags</h2>
+        <p class="">It is important to use proper tags in your html. It is easy to just call everything a div. 
+          To save time by not thinking about which tag to use.</p>
+          <p class="my-2">But this is a really bad practice. You're giving accessibility tools like screen readers and also search engines a hard time to understand your website and the content within it.
+            Of course it takes a little more time to find the correct tag for your purpose, but it surely is worth it.
+          </p>
+          <div class="image-container flex-auto"><img src="img/tags.jpg" alt="" class="w-full"></div>
+      </div>
+      <div class="card text-left card-wide">
+        <!-- <img class="h-24 m-auto pb-1" src="img/accessibility.svg" alt="accessibility logo"> -->
+        <h2 class="text-center">Keep Accessibility in mind</h2>
+        <div class="flex">
+          <div class="w-full lg:w-2/3 inline-block text-justify">
+            <p>Everything mentioned on this page fully or partially has one purpose: <strong>Make your website accessible</strong> for as many people as possible. 
+            Take into consideration that there will be many different devices and browsers used to visit your site. 
+            You want people with disabilities to enjoy your website and be able to hear the story you want to tell. 
+            There are over four million users in the USA alone using a screen reader. </p>
+            <p class="my-2">Keeping the accessibility in mind will not only help users with disabilities to access your page, it will improve your ranking in search engines. 
+            </p>
+            
+          </div>
+          <div class="w-1/3 h-auto ml-6 hidden lg:block relative"><img src="img/accessibility.jpg" alt="" class="rounded-lg absolute inset-0 h-full w-full object-cover object-center"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+ 
+  <footer class="bg-blue-900 text-white">
+    <p class="w-1/3 p-4 hidden md:inline-block text-gray-500 text-xs"><a href="disclaimer.html">Disclaimer</a></p>
+    <p class="text-center py-4 md:w-1/3 md:inline-block">
+      &copy; Tom Wehmeyer
+    </p>
+  </footer>
+
+</body>
+</html>

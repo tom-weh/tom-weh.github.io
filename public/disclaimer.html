@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Languages - Web Design</title>
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <!-- <script src="https://kit.fontawesome.com/830e9d9a3a.js" crossorigin="anonymous"></script> -->
+  <script src="js/script.js"></script>
+  <!-- <link rel="stylesheet" href="../css/default.css"> -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/overwrite.css">
+</head>
+<body class="flex flex-col">
+  <header class="bg-blue-900 text-white p-3">
+    <nav class="md:flex justify-between">
+      <div class="flex justify-between">
+        <h1 class=""><a href="index.html">Web Desgin</a></h1>
+        
+        <button class="md:hidden my-auto" onclick="toggleNav()">
+          <span class="fas fa-bars fa-2x"></span>
+        </button>
+      </div>
+      <ul class="md:block hidden text-xl" id="expandable_menu">
+          <li class="block md:inline-block py-1 hover:bg-blue-800 rounded text-center active"><a href="./index.html">Home</a></li>
+          <li class="block md:inline-block mt-1 py-1 hover:bg-blue-800 rounded text-center"><a href="languages.html">Languages</a></li>
+          <li class="block md:inline-block mt-1 py-1 hover:bg-blue-800 rounded text-center"><a href="best-practices.html">Best practices</a></li>
+          <li class="block md:inline-block mt-1 py-1 hover:bg-blue-800 rounded text-center"><a href="about.html">About</a></li>
+          <li class="block md:hidden mt-1 py-1 hover:bg-blue-800 rounded text-center"><a href="disclaimer.html">Disclaimer</a></li>
+        </ul>
+    </nav>
+  </header>
+
+
+  <main class="flex-auto text-center gradient py-4">
+    <div class="card w-full sm:w-1/2 text-left mt-16">
+      <p>Currently this website is completely non commercial. For this reason, I don't have to put my name and address here. </p>
+      <p class="pt-2">As soon as this changes, I will fill it in.</p>
+    </div>
+    <div class="card w-64 mt-16">
+      <ul>
+        <li class="font-bold">Tom Wehmeyer</li>
+        <li>Somestreet 1a</li>
+        <li>54321 SomeCity</li>
+        <li>Germany</li>
+      </ul>
+    </div>
+  </main>
+ 
+  <footer class="bg-blue-900 text-white">
+    <p class="w-1/3 p-4 hidden md:inline-block text-gray-500 text-xs"><a href="disclaimer.html">Disclaimer</a></p>
+    <p class="text-center py-4 md:w-1/3 md:inline-block">
+      &copy; Tom Wehmeyer
+    </p>
+  </footer>
+</body>
+</html>
