@@ -22,7 +22,7 @@ function countText(){
     }
   }
 
-  var characters = text.length;
+  var characters = text.replace("\n", "").length;
 
   var sentences = 0;
   for (i in splitted_sentences){
