@@ -18,7 +18,7 @@
       <div class="flex justify-between">
         <h1 class=""><a href="index.html">Web Design</a></h1>
         
-        <button class="md:hidden my-auto" onclick="toggleNav()">
+        <button class="md:hidden my-auto" onclick="toggleNav()" aria-label="Expand Menu">
           <span class="fas fa-bars fa-2x"></span>
         </button>
       </div>
@@ -50,7 +50,7 @@
       <div class="card flex flex-col card-half">
         <h2 class="">Avoid inline styles</h2>
         <p class="">You should avoid using inline styles. Inline styles are styles you attach directly to the HTML element, for example: </p>
-        <p class="mt-2"><code>&lt;<span class="text-blue-800">p</span> <span class="text-blue-500">style=</span><span class="text-orange-600">"text-align:center;"</span>&gt;</code></p>
+        <p class="mt-2"><code>&lt;<span class="text-blue-900">p</span> <span class="text-blue-700">style=</span><span class="text-orange-800">"text-align:center;"</span>&gt;</code></p>
         <p class="mt-2">This is rather bad practice because you have to go into your HTML every time you want to change the style of an element. The inline styles will <strong>always</strong> overwrite the styles created in the head or an external file. 
         So you are better of using an external stylesheet as it also is much more pleasant to look at.</p>
         <div class="image-container flex-auto"><img src="img/inline.jpg" alt="" class="w-full"></div>
