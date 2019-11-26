@@ -1,5 +1,5 @@
 function toggleNav(){
-  var x = document.getElementById("expandable_menu");
+  let x = document.getElementById("expandable_menu");
   if (x.classList.contains("block")) document.getElementById("expandable_menu").classList.replace("block", "hidden")
   else {
     document.getElementById("expandable_menu").classList.replace("hidden","block")
@@ -10,33 +10,32 @@ function toggleNav(){
 function countText(){
   text = document.getElementById("word-counter-textarea").value;
 
-  var words = 0;
-  var splitted_words = text.split(" ");
-  var splitted_sentences = text.split(/[.!?]/);
-  var splitted_paragraphs = text.split("\n");
+  let words = 0;
+  let splitted_words = text.split(" ");
+  let splitted_sentences = text.split(/[.!?]/);
+  let splitted_paragraphs = text.split("\n");
 
   for (i in splitted_words){
-    word = splitted_words[i];
+    let word = splitted_words[i];
     if (word !== "") {
       words += 1;
     }
   }
 
-  var characters = text.replace(/\n/g, "").length;
+  let characters = text.replace(/\n/g, "").length;
 
-  var sentences = 0;
+  let sentences = 0;
   for (i in splitted_sentences){
-    sentence = splitted_sentences[i].replace(/ /g, "").replace(/\n/g, "");
+    let sentence = splitted_sentences[i].replace(/ /g, "").replace(/\n/g, "");
     if (sentence !== "") {
       sentences += 1;
     }
   }
   
-  var paragraphs = 0;
+  let paragraphs = 0;
   
   for (i in splitted_paragraphs){
-    paragraph = splitted_paragraphs[i].replace(/ /g, "");
-    console.log(paragraph)
+    let paragraph = splitted_paragraphs[i].replace(/ /g, "");
     if (paragraph !== "") {
       paragraphs += 1
     }
@@ -45,6 +44,9 @@ function countText(){
   td = document.getElementById("text-details").getElementsByTagName("td");
   td[0].innerHTML = words;
   td[1].innerHTML = characters;
-  td[2].innerHTML = sentences;
-  td[3].innerHTML = paragraphs;
+  let spaces = (text.match(/ /g)||[]).length;
+  td[2].innerHTML = characters - spaces;
+  td[3].innerHTML = sentences;
+  td[4].innerHTML = paragraphs;
+  td[5].innerHTML = Math.round(((text.match(/\w/g)||[]).length/words)*10||0)/10;
 }
