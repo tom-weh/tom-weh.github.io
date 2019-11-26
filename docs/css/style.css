@@ -653,6 +653,23 @@ h1,h2,h3,h4,h5,h6{
   font-weight: bold;
 }
 
+.inline-table{
+  display: inline-table;
+}
+
+nav li{
+  border-radius: 0.25rem;
+  text-align: center;
+  display: block;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding: .3rem;
+}
+
+nav li:hover{
+  background-color: #2c5282;
+}
+
 .card{
   padding: 1.5rem;
   background-color: #f7fafc;
@@ -662,11 +679,6 @@ h1,h2,h3,h4,h5,h6{
   margin-right: auto;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
 }
 
 .image-container{
@@ -689,13 +701,27 @@ html, body{
   color: #222;
 }
 
-nav{
-  font-size: 1.1rem;
+.last-td-right tr > td:last-child{
+  text-align: right;
 }
 
-nav li{
-  display: inline;
-  padding: .5rem;
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+nav{
+  font-size: 1.0rem;
 }
 
 .gradient{
@@ -743,6 +769,10 @@ article{
 
   #language-cards > *:last-child, .cont{
     width: 98%;
+  }
+
+  nav li{
+    margin-left: 0.5rem;
   }
 }
 

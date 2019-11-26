@@ -35,19 +35,37 @@
 
 
   <main class="gradient flex md:py24 flex-auto">
-    <div class="mx-8 md:mx-16 md:mx-32 max-w-2xl my-auto">
-      <div class=" mb-20 bg-gray-100 rounded-lg p-6">
-          <h2 class="">
-            Welcome to my Webpage!
-          </h2>
-          <p class="mt-2">
-            This Website was created to learn and show off my skills in web design. 
-            It is the final project for the <q>Web Design for Everybody</q> specialization on coursera!
-          </p>
-          <p class="mt-2">
-            Feel free to visit the different pages and test the website. I've written down some of the things I learned during this course. 
-            
-          </p>
+    <div class="container">
+      <h2 class="text-center mt-2 p-2">I will add useful tools on this page using Javascript</h2>
+      <div class="card w-full">
+        <h3 class="inline-block">Word counter</h3>
+        <p class="inline">- Put in a text and quickly find out the number of words and other Details</p>
+        <div class="flex flex-wrap mt-3">
+          <textarea aria-label="word counter textarea" name="Word counter" placeholder="Enter the text..." id="word-counter-textarea" class="border w-full lg:w-4/6 h-64 mr-6 p-2" oninput="countText()"></textarea>
+          <table class="w-56 lg:flex-auto mx-6 inline-table mx-auto last-td-right" id="text-details">
+            <thead>
+              <th colspan="2" class="text-center text-xl">Details</th>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Words</th>
+                <td>0</td>
+              </tr>
+              <tr>
+                <th>Characters</th>
+                <td>0</td>
+              </tr>
+              <tr>
+                <th>Sentences</th>
+                <td>0</td>
+              </tr>
+              <tr>
+                <th>Paragraphs</th>
+                <td>0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   </main>

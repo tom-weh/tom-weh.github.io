@@ -16,19 +16,20 @@
   <header class="bg-blue-900 text-white p-3">
     <nav class="md:flex justify-between">
       <div class="flex justify-between">
-        <h1 class=""><a href="index.html">Web Desgin</a></h1>
+        <h1 class=""><a href="index.html">Web Design</a></h1>
         
         <button class="md:hidden my-auto" onclick="toggleNav()">
           <span class="fas fa-bars fa-2x"></span>
         </button>
       </div>
       <ul class="md:block hidden text-xl" id="expandable_menu">
-          <li class="block md:inline-block py-1 hover:bg-blue-800 rounded text-center active"><a href="./index.html">Home</a></li>
-          <li class="block md:inline-block mt-1 py-1 hover:bg-blue-800 rounded text-center"><a href="languages.html">Languages</a></li>
-          <li class="block md:inline-block mt-1 py-1 hover:bg-blue-800 rounded text-center"><a href="best-practices.html">Best practices</a></li>
-          <li class="block md:inline-block mt-1 py-1 hover:bg-blue-800 rounded text-center"><a href="about.html">About</a></li>
-          <li class="block md:hidden mt-1 py-1 hover:bg-blue-800 rounded text-center"><a href="disclaimer.html">Disclaimer</a></li>
-        </ul>
+        <li class="md:inline-block"><a href="./index.html">Home</a></li>
+        <li class="md:inline-block mt-1"><a href="languages.html">Languages</a></li>
+        <li class="md:inline-block mt-1"><a href="best-practices.html">Best practices</a></li>
+        <li class="md:inline-block mt-1"><a href="tools.html">Tools</a></li>
+        <li class="md:inline-block mt-1"><a href="about.html">About</a></li>
+        <li class="md:hidden mt-1"><a href="disclaimer.html">Disclaimer</a></li>
+      </ul>
     </nav>
   </header>
 
@@ -38,7 +39,7 @@
     <p class="max-w-2xl mx-auto">In Web Design, there are always a million ways to achieve the thing you want. Some are more complicated than others. 
       You can build your webpage however you like but there are some best practices to make a good website.</p>
     <section class="flex flex-wrap container flex-center my-4" id="practice-cards">
-      <div class="card card-half">
+      <div class="card flex flex-col card-half">
         <h2 class="">Mobile first</h2>
         <p class="">This is a concept you may follow building your website. If you follow this concept, you will start designing your website to be usable on mobile devices with a small screen.
           This way, you make sure that your website is accessible on almost every device. Then you will start writing media queries and custom rules to change the layout and look of the page on larger screens.
@@ -46,7 +47,7 @@
         <p class="my-2">Good Frameworks most probably are designed this way. For example the popular Framework Bootstrap follows this concept.</p>
         <div class="image-container"><img src="img/mobile.jpg" alt="" class="w-full -mt-16"></div>
       </div>
-      <div class="card card-half">
+      <div class="card flex flex-col card-half">
         <h2 class="">Avoid inline styles</h2>
         <p class="">You should avoid using inline styles. Inline styles are styles you attach directly to the HTML element, for example: </p>
         <p class="mt-2"><code>&lt;<span class="text-blue-800">p</span> <span class="text-blue-500">style=</span><span class="text-orange-600">"text-align:center;"</span>&gt;</code></p>
@@ -54,14 +55,14 @@
         So you are better of using an external stylesheet as it also is much more pleasant to look at.</p>
         <div class="image-container flex-auto"><img src="img/inline.jpg" alt="" class="w-full"></div>
       </div>
-      <div class="card card-half">
+      <div class="card flex flex-col card-half">
         <h2 class="">Validate frequently</h2>
         <p class="">Although browsers do a great job at trying to correct our mistakes (e.g. forgotten closing tags) that isn't always the case. 
           Many people are using different browsers and each browser might correct these errors a little different resulting in different looking websites in different browsers.</p>
           <p class="my-2">Browsers correcting mistakes makes it also impossible to notice that you made a mistake in the first place. For this reason, use tools like <a class="text-blue-700" href="https://validator.w3.org/">w3validator</a> and visit your page on multiple browsers and devices.</p>
           <div class="image-container"><img src="img/time.jpg" alt="" class="w-full"></div>
       </div>
-      <div class="card card-half">
+      <div class="card flex flex-col card-half">
         <h2 class="">Use semantically correct tags</h2>
         <p class="">It is important to use proper tags in your html. It is easy to just call everything a div. 
           To save time by not thinking about which tag to use.</p>
@@ -70,7 +71,7 @@
           </p>
           <div class="image-container flex-auto"><img src="img/tags.jpg" alt="" class="w-full"></div>
       </div>
-      <div class="card text-left card-wide">
+      <div class="card flex flex-col text-left card-wide">
         <h2 class="text-center">Keep Accessibility in mind</h2>
         <div class="flex">
           <div class="w-full lg:w-2/3 inline-block text-justify">
