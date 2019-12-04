@@ -684,10 +684,7 @@ nav li:hover{
 .image-container{
   overflow: hidden;
   border-radius: 0.5rem;
-  height: 16rem;
-}
-
-.image-container > img{
+  height: 12rem;
 }
 
 .-z-1{
@@ -758,6 +755,12 @@ article{
 
 .card-half{
   width: 100%;
+}
+
+@media (min-width: 640px){
+  .image-container{
+    height: 16rem;
+  }
 }
 
 /* Medium (md) */

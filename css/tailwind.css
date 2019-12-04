@@ -34,10 +34,7 @@ nav li:hover{
 }
 
 .image-container{
-  @apply overflow-hidden rounded-lg h-64;
-}
-
-.image-container > img{
+  @apply overflow-hidden rounded-lg h-48;
 }
 
 .-z-1{
@@ -110,6 +107,12 @@ article{
   width: 100%;
 }
 
+@screen sm{
+  .image-container{
+    @apply h-64;
+  }
+}
+
 /* Medium (md) */
 @screen md { 
   #language-cards > *{
@@ -122,6 +125,7 @@ article{
   nav li{
     @apply ml-2;
   }
+
   
 }
 
